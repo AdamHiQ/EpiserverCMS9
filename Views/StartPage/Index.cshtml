@@ -1,0 +1,16 @@
+﻿@model Episerver9.Models.Pages.StartPage
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_root.cshtml";
+}
+
+<div class="row">
+    <div class="jumbotron">
+        <div class="container">
+            <h1>@Html.PropertyFor(x => x.Heading)</h1>
+            <p>@Html.PropertyFor(x=> x.MainBody)</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+    </div>
+</div>
